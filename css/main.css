@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    /* 1rem = 10px */
+    overflow-x: hidden;
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('https://wallpaperaccess.com/full/3485982.jpg') no-repeat center center/cover;
+    height: 100vh;
+    width: 100vw;
+    overflow: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 50rem;
+    margin: 5rem auto;
+    background-color: rgba(238, 238, 238, 0.2);
+    border-radius: 0.4rem;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
+    padding: 4rem 5rem;
+    position: relative;
+}
+
+.header {
+    margin-bottom: 1.5rem;
+    color: #fefefe;
+    font-size: 1.8rem;
+}
+
+.header span {
+    margin-left: 0.25rem;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+form input {
+    /* width: 100%; */
+    flex: 1;
+    border: none;
+    border-radius: 3rem;
+    padding: 1rem 1.2rem;
+    font-size: 1.6rem;
+}
+
+form input:focus {
+    outline: none;
+}
+
+form button {
+    border: none;
+    padding: 1rem 1.5rem;
+    font-size: 1.6rem;
+    border-top-right-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    position: absolute;
+    right: -0.05rem;
+    background-color: #333;
+    color: #fefefe;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1.5rem 0;
+    gap: 0.8rem;
+}
+
+ul li p,
+ul li input {
+    flex: 1;
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 0.5rem;
+    background-color: transparent;
+    border: none;
+    color: #fefefe;
+    cursor: pointer;
+}
+
+ul li button {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 50%;
+    color: #fefefe;
+    cursor: pointer;
+}
+
+ul li .edit {
+    background-color: #333;
+}
+
+ul li .delete {
+    background-color: rgb(206, 86, 86);
+}
+
+ul li p.completed {
+    text-decoration: line-through;
+}
+
+footer {
+    text-align: center;
+    color: #fefefe;
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+}
